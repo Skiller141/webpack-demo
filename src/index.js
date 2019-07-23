@@ -2,6 +2,8 @@ import { Header } from './app/header';
 import { Footer } from './app/footer';
 import '../src/style.css';
 import './styles/scss/main.scss';
+// import webpackgif from './assets/images/webpack.gif';
+// document.getElementById('webpack-gif').setAttribute('src', webpackgif);
 
 let header = new Header();
 let firstHeading = header.getFirstHeading();

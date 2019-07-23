@@ -7,7 +7,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     entry: './src/index.js',
     output: {
-        filename: 'main.js',
+        filename: '[name].[chunkhash].js',
         path: path.resolve(__dirname, '../dist')
     },
     resolve: {
@@ -59,7 +59,7 @@ module.exports = {
             }
         }),
         new MiniCssExtractPlugin({
-            filename: 'style.css'
+            filename: 'style.[chunkhash].css'
         }),
         new CopyWebpackPlugin([{
             from: './src/assets/images',
